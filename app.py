@@ -52,7 +52,7 @@ def preprocess_image(img):
 
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
-    st.image(img, caption="Uploaded Image", use_column_width=True)
+    st.image(img, caption="Uploaded Image", use_container_width=True)
 
     with st.spinner("Analyzing..."):
         processed = preprocess_image(img)
